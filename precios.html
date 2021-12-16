@@ -1,0 +1,347 @@
+<!--Archivo realizado bajo el estandar HTML5-->
+<!DOCTYPE html>
+<html lang="es-ARG">
+
+<head>
+    <!--meta Informacion para el navegador-->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Type" content="text/html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Di Ludovico Maximiiano" />
+    <meta name="description"
+        content="¿Dónde querés ir?, Paquetes, pasajes, hoteles y excursiones exclusivos para Usted. Cruceros, seguros, etc. Nuestros Servicios Ofrecen Diversas Actividades en Su Viaje. Contáctenos Hoy Mismo." />
+    <meta name="keywords" content="html, css, bootstrap, flex, grid, grilla" />
+    <meta name="Copyright" content="Di Ludovico Maximiiano" />
+    <meta name="language" content="es" />
+    <meta name="actualizado" content="9/09/2020" />
+    <meta name="revisit-after" content="1 month" />
+    <meta name="robots" content="index" />
+
+    <!--Titulo de la pagina web-->
+    <title>Viajes Y TurismoS.A.</title>
+
+    <!--Enlace a recursos o referencias CCN-->
+  <!-- build:css css/index.css -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="imagenes/icono.jpg" />
+    <!-- endbuild -->
+
+    <!--Estilo declarado para ambito local-->
+    <style>
+        .row {
+            margin: 10px 0;
+        }
+
+        p,
+        .btn {
+            font-family: 'Source Sans Pro', sans-serif;
+            font-size: 95%;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+            <a class="navbar-brand" href="#">Viajes</a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="./index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./about.html">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="./precios.html">Precios</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="./contacto.html">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <!--Inicio d Jumbotron-->
+        <div class="jumbotron">
+
+            <div class="container">
+
+                <!--Inicio de breadcrumb-->
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item" aria-current="page">
+                            <a href="./index.html">Home</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Precios</li>
+                    </ol>
+                </nav>
+
+                <!--Fin de breadcrumb-->
+
+                <div class="row justify-content-around">
+                    <div class="col-sm-6 col-md-6 col-lg-6">
+                        <div class="contenedor">
+                            <h1>Viajes <small>&</small> Turismo S.A.</h1>
+                            <br />
+                            <br />
+                            <p class="text-justify">Encontrá los <b>Mejores Precios</b> para todos los destinos del
+                                mundo.<u>Financiá en Cuotas sin Interés.</u>
+                                Viaja
+                                con nosotros y te ayudamos a vivir la mejor experiencia de tu vida. Pasajes en Cuotas
+                                con
+                                Todas
+                                las
+                                Tarjetas. No Busques Más. Ofertas para familias. Atención al cliente. Tipos:
+                                Internacionales,
+                                Nacionales, Directos, Solo Ida.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-2"></div>
+                    <div class="col-sm-4 col-md-4 col-lg-4">
+                        <img class="img-fluid img-thumbnail rounded float-right" src="imagenes/turismo.png"
+                            alt="Imagen turistica" width="300" height="200" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!--Inicio de Tabs-->
+    <!--class="nav nav-pills-->
+    <ul class="nav nav-tabs" id="myTab" role="tablist">
+        <li class="nav-item" role="presentation">
+            <!--data-toggle="pill"-->
+            <a class="nav-link active" id="Categorias-tab" data-toggle="tab" href="#Categorias" role="tab"
+                aria-controls="Categorias" aria-selected="true">Categorias</a>
+        </li>
+        <li class="nav-item" role="presentation">
+            <a class="nav-link" id="Tarjetas-tab" data-toggle="tab" href="#Tarjetas" role="tab" aria-controls="Tarjetas"
+                aria-selected="false">Tarjetas</a>
+        </li>
+        <li class="nav-item" role="presentation">
+            <a class="nav-link" id="Comentarios-tab" data-toggle="tab" href="#Comentarios" role="tab"
+                aria-controls="Comentarios" aria-selected="false">Cometarios</a>
+        </li>
+    </ul>
+    <!--inicio de tablas-->
+    <div class="tab-content" id="MyTabContent">
+        <div class="tab-pane fade show active" id="Categorias" role="tabpanel" aria-labelledby="Categorias-tab">
+
+            <div class="table-responsive">
+                <table class="table table-striped">
+                    <thead class="thead-dark">
+                        <tr>
+                            <th scope="col">Categoria</th>
+                            <th scope="col">Crater Barringer</th>
+                            <th scope="col">Gruta de Son Doong</th>
+                            <th scope="col">Bahía Mosquito</th>
+                            <th scope="col">El Caracol</th>
+                            <th scope="col">Don Sheldon Mountain House</th>
+                            <th scope="col">Fosa de las Marianas</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th><span class="oi oi-star"></span></th>
+                            <td>500 USD</td>
+                            <td>500 USD</td>
+                            <td>500 USD</td>
+                            <td>500 USD</td>
+                            <td>500 USD</td>
+                            <td>500 USD</td>
+                        </tr>
+                        <tr>
+                            <th><span class="oi oi-star"></span><span class="oi oi-star"></span></th>
+                            <td>550 USD</td>
+                            <td>550 USD</td>
+                            <td>550 USD</td>
+                            <td>550 USD</td>
+                            <td>550 USD</td>
+                            <td>550 USD</td>
+                        </tr>
+                        <tr>
+                            <th><span class="oi oi-star"></span><span class="oi oi-star"></span><span
+                                    class="oi oi-star"></span>
+                            </th>
+                            <td>600 USD</td>
+                            <td>600 USD</td>
+                            <td>600 USD</td>
+                            <td>600 USD</td>
+                            <td>600 USD</td>
+                            <td>600 USD</td>
+                        </tr>
+                        <tr>
+                            <th><span class="oi oi-star"></span><span class="oi oi-star"></span><span
+                                    class="oi oi-star"></span><span class="oi oi-star"></span></th>
+                            <td>700 USD</td>
+                            <td>700 USD</td>
+                            <td>700 USD</td>
+                            <td>700 USD</td>
+                            <td>700 USD</td>
+                            <td>700 USD</td>
+                        </tr>
+                        <tr>
+                            <th><span class="oi oi-star"></span><span class="oi oi-star"></span><span
+                                    class="oi oi-star"></span><span class="oi oi-star"></span><span
+                                    class="oi oi-star"></span>
+                            </th>
+                            <td>800 USD</td>
+                            <td>800 USD</td>
+                            <td>800 USD</td>
+                            <td>800 USD</td>
+                            <td>800 USD</td>
+                            <td>800 USD</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <br>
+        <!--Fin de tablas-->
+
+        <!--Inicio de Formas de Pago-->
+
+        <div class="tab-pane fade" id="Tarjetas" role="tabpanel" aria-labelledby="Tarjetas-tab">
+            <div class="d-flex justify-content-center">
+                <div class="card" style="width:18rem">
+                    <div class="card-header text-center" style="background-color: black; color: white;">
+                        Targetas aceptadas
+                    </div>
+                    <ul class="list-group list-group-fush text-center">
+                        <li class="list-group-item">Targeta Basica</li>
+                        <li class="list-group-item">Targeta Platinum</li>
+                        <li class="list-group-item">Targeta Gold</li>
+                    </ul>
+                </div>
+            </div>
+            <!--Inicio de Accordion-->
+            <div class="accordion" id="accordionTarjetas">
+                <div class="card">
+                    <div class="card-header" id="headingOne">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse"
+                                data-target="#collapseBasica" aria-expanded="true" aria-controls="collapseBasica">
+                                Tarjeta Basica
+                            </button>
+                        </h5>
+                    </div>
+
+                    <div id="collapseBasica" class="collapse show" aria-labelledby="headingOne"
+                        data-parent="#accordionTarjetas">
+                        <div class="card-body">
+                            12 Meses Con Intereses.
+                            Aprovecha el nuevo beneficio exclusivo de tu Tarjeta Clásica y Paga cómodamente a 12
+                            Meses con Intereses con una atractiva tasa interés del 2.08% mensual fija
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" id="headingTwo">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link btn-block text-left collapsed" type="button"
+                                data-toggle="collapse" data-target="#collapsePlatinum" aria-expanded="false"
+                                aria-controls="collapsePlatinum">
+                                Tarjeta Platinum
+                            </button>
+                        </h5>
+                    </div>
+                    <div id="collapsePlatinum" class="collapse" aria-labelledby="headingTwo"
+                        data-parent="#accordionTarjetas">
+                        <div class="card-body">
+                            12 Meses Con Interés Preferencial.
+                            Aprovecha el nuevo beneficio exclusivo de tu Tarjeta de Crédito POR Ti Banorte y paga
+                            cómodamente a 12 Meses con Intereses por compras de $4,000 pesos con una tasa de interés del
+                            23%
+                            anual fija
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" id="headingThree">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link btn-block text-left collapsed" type="button"
+                                data-toggle="collapse" data-target="#collapseGold" aria-expanded="false"
+                                aria-controls="collapseGold">
+                                Tarjeta Gold
+                            </button>
+                        </h5>
+                    </div>
+                    <div id="collapseGold" class="collapse" aria-labelledby="headingThree"
+                        data-parent="#accordionTarjetas">
+                        <div class="card-body">
+                            En comercios de giro educativo tienes de manera permanente Seis meses con intereses con una
+                            atractiva tasa del 22% anual fija.
+                            Ya sea que pagues un curso, clases especiales, el colegio de tus hijos o la universidad
+                            disfruta
+                            de este beneficio al pagar con tu Tarjeta de Crédito Banorte Oro
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--Fin de Acordion-->
+        </div>
+        <div class="tab-pane fade" id="Comentarios" role="tabpanel" aria-labelledby="Comentarios-tab">
+            <p>Cometarios</p>
+        </div>
+    </div>
+    <!--Fin de tabs-->
+    <!--Fin de Formas de Pago-->
+
+    <footer>
+        <div class="row">
+            <div class="col-sm-4 d-flex flex-column align-items-left">
+                <p class="redesSociales">
+                    <a target="_blank" href="https://www.facebook.com/">Facebook
+                        <span><img class="img-fluid" src="imagenes/facebook.png" alt="facebook" width="32px"
+                                height="29px" style="border-radius: 50%;" /></span></a></p>
+                <p class="redesSociales"> <a target="_blank" href="https://twitter.com/?lang=es">twitter
+                        <span><img class="img-fluid" src="imagenes/twitter.jpg" alt="twitter" width="32px" height="29px"
+                                style="border-radius: 50%;" /></span></a>
+                <p class="redesSociales"><a target="_blank" href="https://www.instagram.com/?hl=es-la">instagram
+                        <span><img class="img-fluid" src="imagenes/instagram.png" alt="instagram" width="50px"
+                                height="50px" style="border-radius: 50%;" /></span></a></p>
+                <p class="redesSociales"><a target="_blank" href="https://www.google.com.ar/">google
+                        <span><img class="img-fluid" src="imagenes/google.jpg" alt="google" width="32px" height="29px"
+                                style="border-radius: 50%;" /></span></a></p>
+            </div>
+            <div class="col-sm-4 d-flex flex-column align-items-center">
+                <address>
+                    <h3>OFICINA CENTRAL</h3>
+                    <p>ladines 3405, CABA Argentina.</p>
+                    <p> +5491123034451</p>
+                    <p> mdlprofesional@gmail.com</p>
+                </address>
+            </div>
+            <div class="col-sm-4 d-flex flex-column align-items-end">
+                <a href="about.html">Nosotros</a>
+                <a href="precios.html">Precios</a>
+                <a href="contacto.html">contacto</a>
+            </div>
+
+        </div>
+        </div>
+    </footer>
+    <!--Fin de pie de pagina-->
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <!-- build:js js/main.js -->
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="js/index.js"></script>
+    <!-- endbuild -->
+</body>
+
+</html>

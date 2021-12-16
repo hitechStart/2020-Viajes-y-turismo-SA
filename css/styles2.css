@@ -1,0 +1,52 @@
+jumbotron {
+  background-color: #fffa19;
+  margin-top: 50px;
+  margin-bottom: 0px;
+}
+address {
+  color: white;
+  font-weight: lighter;
+}
+footer {
+  padding: 10px 10px 0 10px;
+  margin-top: 10px;
+  margin-bottom: 0px;
+  background-color: #fffa19;
+}
+.card-hotel {
+  flex: 1 150px;
+  /*padding: 2px 5px 2px 5px;*/
+  margin-top: 10px;
+  margin-bottom: 0px;
+}
+.btn {
+  font-size: 20px;
+  color: whitesmoke;
+  font-weight: bolder;
+  border: 1px solid #7c7575;
+  text-shadow: 1px 1px 2px #464646;
+}
+.btn-reverse {
+  width: 100%;
+  border-radius: 5px;
+  background: -moz-linear-gradient(left, #fceabb 0%, #fccd4d 54%, #f8b500 69%, #fbdf93 100%);
+  background: -webkit-gradient(left top, right top, color-stop(0%, #fceabb), color-stop(54%, #fccd4d), color-stop(69%, #f8b500), color-stop(100%, #fbdf93));
+  background: -webkit-linear-gradient(left, #fceabb 0%, #fccd4d 54%, #f8b500 69%, #fbdf93 100%);
+  background: -o-linear-gradient(left, #fceabb 0%, #fccd4d 54%, #f8b500 69%, #fbdf93 100%);
+  background: -ms-linear-gradient(left, #fceabb 0%, #fccd4d 54%, #f8b500 69%, #fbdf93 100%);
+  background: linear-gradient(to right, #fceabb 0%, #fccd4d 54%, #f8b500 69%, #fbdf93 100%);
+}
+.img {
+  border-radius: 30px;
+  box-shadow: inset 3px 3px 3px rgba(255, 255, 255, 0.7), inset -2px -2px 3px rgba(0, 0, 0, 0.1), 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+.redesSociales {
+  font-size: 20px;
+  font-weight: bolder;
+}
+.footer-address-icon {
+  padding-right: 10px;
+}
+.tab-content {
+  padding-top: 10px;
+}

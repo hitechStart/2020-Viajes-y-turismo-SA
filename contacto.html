@@ -1,0 +1,216 @@
+<!--Archivo realizado bajo el estandar HTML5-->
+<!DOCTYPE html>
+<html lang="es-ARG">
+
+<head>
+    <!--meta Informacion para el navegador-->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Type" content="text/html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Di Ludovico Maximiiano" />
+    <meta name="description"
+        content="¿Dónde querés ir?, Paquetes, pasajes, hoteles y excursiones exclusivos para Usted. Cruceros, seguros, etc. Nuestros Servicios Ofrecen Diversas Actividades en Su Viaje. Contáctenos Hoy Mismo." />
+    <meta name="keywords" content="html, css, bootstrap, flex, grid, grilla" />
+    <meta name="Copyright" content="Di Ludovico Maximiiano" />
+    <meta name="language" content="es" />
+    <meta name="actualizado" content="9/09/2020" />
+    <meta name="revisit-after" content="1 month" />
+    <meta name="robots" content="index" />
+
+    <!--Titulo de la pagina web-->
+    <title>Viajes Y TurismoS.A.</title>
+
+    <!--Enlace a recursos o referencias CCN-->
+   <!-- build:css css/index.css -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="imagenes/icono.jpg" />
+    <!-- endbuild -->
+
+    <!--Estilo declarado para ambito local-->
+    <style>
+        .row {
+            margin: 10px 0;
+        }
+
+        p,
+        .btn {
+            font-family: 'Source Sans Pro', sans-serif;
+            font-size: 95%;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+            <a class="navbar-brand" href="#">Viajes</a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="./index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./about.html">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./precios.html">Precios</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link active" href="./contacto.html">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!--Inicio d Jumbotron-->
+        <div class="jumbotron">
+
+            <div class="container">
+                <!--Inicio de breadcrumb-->
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item" aria-current="page">
+                            <a href="./index.html">Home</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Contacto</li>
+                    </ol>
+                </nav>
+                <!--Fin de breadcrumb-->
+
+                <div class="row justify-content-around">
+                    <div class="col-sm-6 col-md-6 col-lg-6">
+                        <div class="contenedor">
+                            <h1>Viajes <small>&</small> Turismo S.A.</h1>
+                            <br />
+                            <br />
+                            <p class="text-justify">Encontrá los <b>Mejores Precios</b> para todos los destinos del
+                                mundo.<u>Financiá en Cuotas sin Interés.</u>
+                                Viaja
+                                con nosotros y te ayudamos a vivir la mejor experiencia de tu vida. Pasajes en Cuotas
+                                con
+                                Todas
+                                las
+                                Tarjetas. No Busques Más. Ofertas para familias. Atención al cliente. Tipos:
+                                Internacionales,
+                                Nacionales, Directos, Solo Ida.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-2"></div>
+                    <div class="col-sm-4 col-md-4 col-lg-4">
+                        <img class="img-fluid img-thumbnail rounded float-right" src="imagenes/turismo.png"
+                            alt="Imagen turistica" width="300" height="200" />
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        </div>
+        <!--Fin de jumbotron-->
+    </header>
+    <hr />
+    <section>
+        <!--Inicio de Formulario-->
+        <h1>Dejame tu comentario</h1>
+        <form>
+            <div class="form-row">
+                <div class="form-group col-sm-6">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" class="form-control" id="nombre" placeholder="Ingrese su nombre">
+                </div>
+                <div class="form-group col-sm-6">
+                    <label for="apellido">Apellido</label>
+                    <input type="text" class="form-control" id="nombre" placeholder="Ingrese su apellido">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" class="form-control" id="email" placeholder="Ingrese su email">
+            </div>
+            <div class="form-row">
+                <div class="form-group col-sm-9">
+                    <label for="domicilio">Domicilio</label>
+                    <input type="text" class="form-control" id="domicilio" placeholder="Ingrese su domicilio">
+                </div>
+                <div class="form-group col-sm-3">
+                    <label for="provincia">Provincia</label>
+                    <select id="provincia" class="form-control">
+                        <option selected>Capital Federal</option>
+                        <option>Buenos Aires</option>
+                        <option>Cordoba</option>
+                        <option>Santa Fe</option>
+                        <option>Mendoza</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="comentario">Comentario</label>
+                <textarea id="comentario" class="form-control" rows="10"></textarea>
+            </div>
+            <div class="form-group form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">quiero que me contacten</label>
+            </div>
+            <!--outline-->
+            <button type="submit" class="btn btn-primary">Enviar</button>
+        </form>
+        <!--Fin de Fromulario-->
+    </section>
+    <hr />
+    <!--Inicio de pie de pagina-->
+    <!--clases de control de alineación para ubicar los elementos del footer a la izquierda, centro o derecha.-->
+    <footer>
+        <div class="row">
+            <div class="col-sm-4 d-flex flex-column align-items-left">
+                <p class="redesSociales">
+                    <a target="_blank" href="https://www.facebook.com/">Facebook
+                        <span><img class="img-fluid" src="imagenes/facebook.png" alt="facebook" width="32px"
+                                height="29px" style="border-radius: 50%;" /></span></a></p>
+                <p class="redesSociales"> <a target="_blank" href="https://twitter.com/?lang=es">twitter
+                        <span><img class="img-fluid" src="imagenes/twitter.jpg" alt="twitter" width="32px" height="29px"
+                                style="border-radius: 50%;" /></span></a>
+                <p class="redesSociales"><a target="_blank" href="https://www.instagram.com/?hl=es-la">instagram
+                        <span><img class="img-fluid" src="imagenes/instagram.png" alt="instagram" width="50px"
+                                height="50px" style="border-radius: 50%;" /></span></a></p>
+                <p class="redesSociales"><a target="_blank" href="https://www.google.com.ar/">google
+                        <span><img class="img-fluid" src="imagenes/google.jpg" alt="google" width="32px" height="29px"
+                                style="border-radius: 50%;" /></span></a></p>
+            </div>
+            <div class="col-sm-4 d-flex flex-column align-items-center">
+                <address>
+                    <h3>OFICINA CENTRAL</h3>
+                    <p>ladines 3405, CABA Argentina.</p>
+                    <p> +5491123034451</p>
+                    <p> mdlprofesional@gmail.com</p>
+                </address>
+            </div>
+            <div class="col-sm-4 d-flex flex-column align-items-end">
+                <a href="about.html">Nosotros</a>
+                <a href="precios.html">Precios</a>
+                <a href="contacto.html">contacto</a>
+            </div>
+
+        </div>
+        </div>
+    </footer>
+    <!--Fin de pie de pagina-->
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <!-- build:js js/main.js -->
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="js/index.js"></script>
+    <!-- endbuild -->
+</body>
+
+</html>
